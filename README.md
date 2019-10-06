@@ -1,5 +1,8 @@
 # Moving Average Arduino Library
 
+[![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/stargazers)
+
 A C++ library that implements a variety of moving averages on the Arduino platform.
 
 ## Contributing
