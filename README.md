@@ -9,7 +9,7 @@ A C++ library that implements a variety of moving averages on the Arduino platfo
 
 This library implements the moving average through a circular array.
 
-> [Click here to see more details](https://www.notion.so/Moving-Average-Lib-for-Arduino-Docs-462e9a5d4e6d4660b67d8e8f124d851e)
+> _[Click here to see more details](https://www.notion.so/Moving-Average-Lib-for-Arduino-Docs-462e9a5d4e6d4660b67d8e8f124d851e)_
 
 ## Contributing
 
