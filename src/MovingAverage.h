@@ -29,9 +29,7 @@ class MovingAverage {
         _current_index(0),
         _array((TypeOfArray *)calloc(size, sizeof(TypeOfArray))),
         _average_sum(0),
-        _initial_value(0) {
-    for (size_t i = 0; i < size; i++) _array[i] = 0;
-  }
+        _initial_value(0) {}
   MovingAverage(size_t size, TypeOfArray initialize)
       : _array_size(size),
         _current_index(0),
