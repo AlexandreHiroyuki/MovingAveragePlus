@@ -24,6 +24,7 @@ class MovingAverage {
   }
 
  public:
+  // Constructor
   MovingAverage(size_t size)
       : _array_size(size),
         _current_index(0),
@@ -39,6 +40,11 @@ class MovingAverage {
     for (size_t i = 0; i < size; i++) _array[i] = initialize;
   }
 
+  // Destructor
+  ~MovingAverage() { free(_array); }
+
+  // Get Result and Access elements
+
   MovingAverage<TypeOfArray> &push(TypeOfArray input) {
     _average_sum -= _array[_current_index];
 
@@ -50,6 +56,7 @@ class MovingAverage {
 
     return *this;
   }
+
   TypeOfArray get() { return (_average_sum / _array_size); }
 
   TypeOfArray front() {
@@ -63,9 +70,25 @@ class MovingAverage {
 
     return _array[last_index];
   }
+
   TypeOfArray back() { return _array[_current_index]; }
 
+  TypeOfArray operator[](int index) {
+    int final_index = _current_index + index;
+
+    int check_index = _array_size - final_index;
+
+    if (check_index <= 0) {
+      return _array[check_index * -1];
+    }
+
+    return _array[final_index];
+  }
+
   TypeOfArray atIndex(size_t index) { return _array[index]; }
+
+  // Modify array
+
   size_t size() { return _array_size; }
 
   MovingAverage<TypeOfArray> &resize(size_t new_size) {
@@ -98,18 +121,6 @@ class MovingAverage {
     _average_sum = fill_value * _array_size;
 
     return *this;
-  }
-
-  TypeOfArray operator[](int index) {
-    int final_index = _current_index + index;
-
-    int check_index = _array_size - final_index;
-
-    if (check_index <= 0) {
-      return _array[check_index * -1];
-    }
-
-    return _array[final_index];
   }
 };
 
