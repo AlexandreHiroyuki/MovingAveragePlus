@@ -5,6 +5,8 @@
 
 A C++ library that implements a variety of moving averages on the Arduino platform.
 
+This library is listed in the official Arduino library manager, and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-library)
+
 ## Documentation
 
 This library implements the moving average through a circular array.
