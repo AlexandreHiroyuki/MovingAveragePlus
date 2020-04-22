@@ -74,6 +74,8 @@ class MovingAverage {
   TypeOfArray back() { return _array[_current_index]; }
 
   TypeOfArray operator[](int index) {
+    if (index > _array_size) return 0;
+
     int final_index = _current_index + index;
 
     int check_index = _array_size - final_index;
