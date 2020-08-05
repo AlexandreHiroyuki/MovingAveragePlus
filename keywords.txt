@@ -6,7 +6,7 @@
 # Class (KEYWORD1)
 #######################################
 
-ArithmeticMA	KEYWORD1
+MovingAverage	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
