@@ -11,7 +11,7 @@ This library is listed in the official [Arduino Library Manager](https://www.ard
 
 This library implements the moving average through a circular array.
 
-> _[Click here to see the full documentation](https://www.notion.so/Moving-Average-Lib-for-Arduino-Docs-462e9a5d4e6d4660b67d8e8f124d851e)_
+> _[Click here to see the full documentation](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/docs)_
 
 ## Contributing
 
