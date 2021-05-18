@@ -11,11 +11,9 @@ template <class TypeOfArray>
 class MovingAverage {
  private:
   size_t _array_size;
-  TypeOfArray *_array;
-
   size_t _current_index;
+  TypeOfArray *_array;
   TypeOfArray _average_sum;
-
   TypeOfArray _initial_value;
 
   void _nextIndex() {
