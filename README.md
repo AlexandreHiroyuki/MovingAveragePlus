@@ -3,13 +3,13 @@
 [![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/stargazers)
 
-A C++ library that implements a variety of moving averages on the Arduino platform.
+A C++ library that implements a lightweight perfomance focused moving average on the Arduino platform.
 
 This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-library/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-library)
 
 ## Documentation
 
-This library implements the moving average through a circular array.
+This library implements the moving average using a circular array.
 
 > _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAverage_ArduinoLibrary/)_
 
