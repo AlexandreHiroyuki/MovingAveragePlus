@@ -2,6 +2,7 @@
 
 [![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/stargazers)
+[![Top Language](https://img.shields.io/github/languages/top/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)
 
 A C++ library that implements a lightweight perfomance focused moving average on the Arduino platform.
 
