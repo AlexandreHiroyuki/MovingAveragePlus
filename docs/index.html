@@ -1,4 +1,5 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Moving Average Lib for Arduino Docs</title><style>
+/* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
 	-webkit-print-color-adjust: exact;
@@ -282,6 +283,17 @@ ol > li {
 	margin-right: 1em;
 }
 
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
 time {
 	opacity: 0.5;
 }
@@ -460,151 +472,168 @@ blockquote {
 	margin-top: 0.25em;
 }
 
-.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
 .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
 .highlight-default {
+	color: rgba(55, 53, 47, 1);
 }
 .highlight-gray {
-	color: rgb(155,154,151);
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
 }
 .highlight-brown {
-	color: rgb(100,71,58);
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
 }
 .highlight-orange {
-	color: rgb(217,115,13);
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
 }
 .highlight-yellow {
-	color: rgb(223,171,1);
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
 }
 .highlight-teal {
-	color: rgb(15,123,108);
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
 }
 .highlight-blue {
-	color: rgb(11,110,153);
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
 }
 .highlight-purple {
-	color: rgb(105,64,165);
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
 }
 .highlight-pink {
-	color: rgb(173,26,114);
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
 }
 .highlight-red {
-	color: rgb(224,62,62);
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
 }
 .highlight-gray_background {
-	background: rgb(235,236,237);
+	background: rgba(241, 241, 239, 1);
 }
 .highlight-brown_background {
-	background: rgb(233,229,227);
+	background: rgba(244, 238, 238, 1);
 }
 .highlight-orange_background {
-	background: rgb(250,235,221);
+	background: rgba(251, 236, 221, 1);
 }
 .highlight-yellow_background {
-	background: rgb(251,243,219);
+	background: rgba(251, 243, 219, 1);
 }
 .highlight-teal_background {
-	background: rgb(221,237,234);
+	background: rgba(237, 243, 236, 1);
 }
 .highlight-blue_background {
-	background: rgb(221,235,241);
+	background: rgba(231, 243, 248, 1);
 }
 .highlight-purple_background {
-	background: rgb(234,228,242);
+	background: rgba(244, 240, 247, 0.8);
 }
 .highlight-pink_background {
-	background: rgb(244,223,235);
+	background: rgba(249, 238, 243, 0.8);
 }
 .highlight-red_background {
-	background: rgb(251,228,228);
+	background: rgba(253, 235, 236, 1);
 }
 .block-color-default {
 	color: inherit;
 	fill: inherit;
 }
 .block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
 }
 .block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
 }
 .block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
 }
 .block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
 }
 .block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
 }
 .block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
 }
 .block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
 }
 .block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
 }
 .block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
 }
 .block-color-gray_background {
-	background: rgb(235,236,237);
+	background: rgba(241, 241, 239, 1);
 }
 .block-color-brown_background {
-	background: rgb(233,229,227);
+	background: rgba(244, 238, 238, 1);
 }
 .block-color-orange_background {
-	background: rgb(250,235,221);
+	background: rgba(251, 236, 221, 1);
 }
 .block-color-yellow_background {
-	background: rgb(251,243,219);
+	background: rgba(251, 243, 219, 1);
 }
 .block-color-teal_background {
-	background: rgb(221,237,234);
+	background: rgba(237, 243, 236, 1);
 }
 .block-color-blue_background {
-	background: rgb(221,235,241);
+	background: rgba(231, 243, 248, 1);
 }
 .block-color-purple_background {
-	background: rgb(234,228,242);
+	background: rgba(244, 240, 247, 0.8);
 }
 .block-color-pink_background {
-	background: rgb(244,223,235);
+	background: rgba(249, 238, 243, 0.8);
 }
 .block-color-red_background {
-	background: rgb(251,228,228);
+	background: rgba(253, 235, 236, 1);
 }
-.select-value-color-default { background-color: rgba(206,205,202,0.5); }
-.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
-.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
-.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
-.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
-.select-value-color-green { background-color: rgba(0,135,107,0.2); }
-.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
-.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
-.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
-.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
 
 .checkbox {
 	display: inline-flex;
@@ -626,10 +655,10 @@ blockquote {
 	
 </style></head><body><article id="462e9a5d-4e6d-4660-b67d-8e8f124d851e" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1528752511608-fbec4b6ea67f?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">📃</span></div><h1 class="page-title">Moving Average Lib for Arduino Docs</h1></header><div class="page-body"><hr id="d76839a1-0491-46c1-ab6f-4594de702146"/><figure id="21c85678-4d12-4ced-8c5b-6501d28fea7f"><a href="https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary" class="block-color-teal_background bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">AlexandreHiroyuki/MovingAverage_ArduinoLibrary</div><div class="bookmark-description">A C++ library that implements a variety of moving averages on the Arduino platform.</div></div><div class="bookmark-href"><img src="https://github.githubassets.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary</div></div><img src="https://avatars2.githubusercontent.com/u/42676495?s=400&amp;v=4" class="bookmark-image"/></a></figure><p id="bd7300fd-a612-43ca-a060-6c5d2f4f9348" class="">
 </p><h1 id="70a23151-7fa3-4c1d-ba77-5562d5b3642b" class="">📌Table of Contents</h1><hr id="1cb87f77-d05d-4399-9072-93b9e4506b6a"/><nav id="938ed2b4-4a09-44ab-849b-ad2f1e386bbc" class="block-color-teal table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#70a23151-7fa3-4c1d-ba77-5562d5b3642b">📌Table of Contents</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#6ee9d5f4-22ea-4d45-916d-68f0134a1d08">💾Installation</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d97e6c0c-62f3-4c53-afac-29dfade82a47">💡Getting Started</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#f9076042-15b6-4b34-938d-6907d6bdb6a0">📦Moving Average Methods</a></div></nav><p id="29a39200-3f0d-4414-beaf-de861771fb10" class="">
-</p><h1 id="6ee9d5f4-22ea-4d45-916d-68f0134a1d08" class="">💾Installation</h1><hr id="ce83e2f6-6b85-4846-a1cc-9c209630f273"/><ol id="7184bbe4-6336-4747-8192-33488d83d927" class="numbered-list" start="1"><li>Clone the repository and download the zip file at <mark class="highlight-teal"><a href="https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary">https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary</a></mark>.
-Also, you can see and download all releases at <mark class="highlight-teal"><a href="https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases">https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases</a></mark>.</li></ol><ol id="18e498d7-a8eb-414b-bc31-bc0288f901f8" class="numbered-list" start="2"><li>Drag and drop it on <code>Arduino/libraries/</code> folder.</li></ol><ol id="acdab05d-3c52-4c07-b099-43c76f8a5283" class="numbered-list" start="3"><li>Include it on your code.<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css')</style><pre id="b453b992-d29f-439e-9cae-c578c621f8cc" class="code"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;MovingAverage.h></span></span></code></pre><p id="6fb97c81-884f-43b9-a87f-3f465b45ec1c" class="">
-</p></li></ol><ul id="92e58546-6213-4ec4-8fff-6f2b7caeedaf" class="bulleted-list"><li>You can also download and install the library through the official library manager on the Arduino IDE.
-Access<mark class="highlight-teal"><strong> </strong></mark><mark class="highlight-teal"><a href="https://www.arduino.cc/en/guide/libraries">https://www.arduino.cc/en/guide/libraries</a></mark> to see more details about installing libraries on Arduino IDE.</li></ul><figure id="17d1c416-9aff-44aa-9754-419c5fbe7ec3"><a href="https://www.arduino.cc/en/guide/libraries" class="block-color-teal_background bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Arduino - Libraries</div><div class="bookmark-description">Once you are comfortable with the Arduino software and using the built-in functions, you may want to extend the ability of your Arduino with additional libraries. Libraries are a collection of code that makes it easy for you to connect to a sensor, display, module, etc.</div></div><div class="bookmark-href"><img src="https://www.arduino.cc/favicon.ico" class="icon bookmark-icon"/>https://www.arduino.cc/en/guide/libraries</div></div><img src="https://www.arduino.cc/en/uploads/Guide/ImportLibraryFromZIPFile.png" class="bookmark-image"/></a></figure><ul id="47878b35-443e-42cf-9c42-e63d02712c9a" class="bulleted-list"><li>Another site that lists Arduino libraries accepted by the official library manager <mark class="highlight-teal"><a href="https://www.arduinolibraries.info/libraries/moving-average-library">https://www.arduinolibraries.info/libraries/moving-average-library</a></mark>.</li></ul><figure id="7b3a862d-ebb6-4b26-8127-706972395ea7"><a href="https://www.arduinolibraries.info/libraries/moving-average-library" class="block-color-teal_background bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Moving Average Library</div><div class="bookmark-description">Moving Average library for Arduino</div></div><div class="bookmark-href"><img src="https://www.arduinolibraries.info/favicon.ico" class="icon bookmark-icon"/>https://www.arduinolibraries.info/libraries/moving-average-library</div></div></a></figure><h1 id="d97e6c0c-62f3-4c53-afac-29dfade82a47" class="">💡Getting Started</h1><hr id="5fdfb728-8247-44e9-b439-5e91da27bb19"/><ol id="b32dcaa1-45ff-4966-8faa-d1238b935a93" class="numbered-list" start="1"><li>You can easily try out the library by running the example code.</li></ol><ol id="a80d7248-aeb5-4113-b957-39e70d9cd354" class="numbered-list" start="2"><li>Just open the subfolder <code>MovingAverage_ArduinoLibrary/examples/</code>.</li></ol><ol id="5edcc980-340e-4a6c-ab7f-b11f7e208db5" class="numbered-list" start="3"><li>Then try compiling the <code>moving_average_print.ino</code>.</li></ol><ol id="9c775e68-27cf-44b6-84ed-0c9c8b260e93" class="numbered-list" start="4"><li>Open the serial monitor.</li></ol><ol id="653ce0aa-70fb-4776-b683-6e6fac705e11" class="numbered-list" start="5"><li>Then see the array magically moving and calculating it average!</li></ol><p id="5a9cc80b-85f9-4277-b117-1410358c18ad" class="">
+</p><h1 id="6ee9d5f4-22ea-4d45-916d-68f0134a1d08" class="">💾Installation</h1><hr id="ce83e2f6-6b85-4846-a1cc-9c209630f273"/><ol type="1" id="7184bbe4-6336-4747-8192-33488d83d927" class="numbered-list" start="1"><li>Clone the repository and download the zip file at <mark class="highlight-teal"><a href="https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary">https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary</a></mark>.
+Also, you can see and download all releases at <mark class="highlight-teal"><a href="https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases">https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases</a></mark>.</li></ol><ol type="1" id="18e498d7-a8eb-414b-bc31-bc0288f901f8" class="numbered-list" start="2"><li>Drag and drop it on <code>Arduino/libraries/</code> folder.</li></ol><ol type="1" id="acdab05d-3c52-4c07-b099-43c76f8a5283" class="numbered-list" start="3"><li>Include it on your code.<pre id="b453b992-d29f-439e-9cae-c578c621f8cc" class="code"><code>#include &lt;MovingAverage.h&gt;</code></pre><p id="6fb97c81-884f-43b9-a87f-3f465b45ec1c" class="">
+</p></li></ol><ul id="92e58546-6213-4ec4-8fff-6f2b7caeedaf" class="bulleted-list"><li style="list-style-type:disc">You can also download and install the library through the official library manager on the Arduino IDE.
+Access<mark class="highlight-teal"><strong> </strong></mark><mark class="highlight-teal"><a href="https://www.arduino.cc/en/guide/libraries">https://www.arduino.cc/en/guide/libraries</a></mark> to see more details about installing libraries on Arduino IDE.</li></ul><figure id="17d1c416-9aff-44aa-9754-419c5fbe7ec3"><a href="https://www.arduino.cc/en/guide/libraries" class="block-color-teal_background bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Arduino - Libraries</div><div class="bookmark-description">Once you are comfortable with the Arduino software and using the built-in functions, you may want to extend the ability of your Arduino with additional libraries. Libraries are a collection of code that makes it easy for you to connect to a sensor, display, module, etc.</div></div><div class="bookmark-href"><img src="https://www.arduino.cc/favicon.ico" class="icon bookmark-icon"/>https://www.arduino.cc/en/guide/libraries</div></div><img src="https://www.arduino.cc/en/uploads/Guide/ImportLibraryFromZIPFile.png" class="bookmark-image"/></a></figure><ul id="47878b35-443e-42cf-9c42-e63d02712c9a" class="bulleted-list"><li style="list-style-type:disc">Another site that lists Arduino libraries accepted by the official library manager <mark class="highlight-teal"><a href="https://www.arduinolibraries.info/libraries/moving-average-library">https://www.arduinolibraries.info/libraries/moving-average-library</a></mark>.</li></ul><figure id="7b3a862d-ebb6-4b26-8127-706972395ea7"><a href="https://www.arduinolibraries.info/libraries/moving-average-library" class="block-color-teal_background bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Moving Average Library</div><div class="bookmark-description">Moving Average library for Arduino</div></div><div class="bookmark-href"><img src="https://www.arduinolibraries.info/favicon.ico" class="icon bookmark-icon"/>https://www.arduinolibraries.info/libraries/moving-average-library</div></div></a></figure><h1 id="d97e6c0c-62f3-4c53-afac-29dfade82a47" class="">💡Getting Started</h1><hr id="5fdfb728-8247-44e9-b439-5e91da27bb19"/><ol type="1" id="b32dcaa1-45ff-4966-8faa-d1238b935a93" class="numbered-list" start="1"><li>You can easily try out the library by running the example code.</li></ol><ol type="1" id="a80d7248-aeb5-4113-b957-39e70d9cd354" class="numbered-list" start="2"><li>Just open the subfolder <code>MovingAverage_ArduinoLibrary/examples/</code>.</li></ol><ol type="1" id="5edcc980-340e-4a6c-ab7f-b11f7e208db5" class="numbered-list" start="3"><li>Then try compiling the <code>moving_average_print.ino</code>.</li></ol><ol type="1" id="9c775e68-27cf-44b6-84ed-0c9c8b260e93" class="numbered-list" start="4"><li>Open the serial monitor.</li></ol><ol type="1" id="653ce0aa-70fb-4776-b683-6e6fac705e11" class="numbered-list" start="5"><li>Then see the array magically moving and calculating it average!</li></ol><p id="5a9cc80b-85f9-4277-b117-1410358c18ad" class="">
 </p><h1 id="f9076042-15b6-4b34-938d-6907d6bdb6a0" class="">📦Moving Average Methods</h1><hr id="b7bed94e-c33f-499e-8107-52136b92b368"/><p id="d42bc986-101b-4043-ad87-63d79684100c" class="">The <mark class="highlight-teal"><strong>MovingAverage </strong></mark>class abstracts the implementation of a circular array in order to calculate the arithmetic average of its members.
 Because it is a circular array, the next input will replace the oldest element (represented by the first index), so it is also possible to call it a <mark class="highlight-teal"><strong>FIFO queue</strong></mark>.
 
