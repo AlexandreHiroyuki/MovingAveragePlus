@@ -5,6 +5,8 @@
 #ifndef MOVING_AVERAGE_H
 #define MOVING_AVERAGE_H
 
+#include <Arduino.h>
+
 #include <cstring>
 
 template <class TypeOfArray>
@@ -31,15 +33,6 @@ class MovingAverage {
         _array((TypeOfArray *)calloc(size, sizeof(TypeOfArray))),
         _average_sum(0),
         _initial_value(0) {}
-  // MovingAverage(size_t size, TypeOfArray initialize)
-  //     : _array_size(size),
-  //       _current_index(0),
-  //       _average_counter(0),
-  //       _array((TypeOfArray *)calloc(size, sizeof(TypeOfArray))),
-  //       _average_sum(initialize * size),
-  //       _initial_value(initialize) {
-  //   for (size_t i = 0; i < size; i++) _array[i] = initialize;
-  // }
 
   // Destructor
   ~MovingAverage() { free(_array); }
@@ -110,18 +103,6 @@ class MovingAverage {
     _array_size = new_size;
     return *this;
   }
-  // MovingAverage<TypeOfArray> &reset() {
-  //   for (size_t i = 0; i < _array_size; i++) {
-  //     _array[i] = _initial_value;
-  //   }
-  //    memset(_array, 0, _array_size);
-
-  //   _average_counter = 0;
-
-  //   _average_sum = _initial_value * _average_counter;
-
-  //   return *this;
-  // }
   MovingAverage<TypeOfArray> &clear() {
     memset(_array, 0, sizeof(TypeOfArray) * _array_size);
 
