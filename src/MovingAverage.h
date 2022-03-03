@@ -7,11 +7,14 @@
 
 #include <Arduino.h>
 
+#include <cstring>
+
 template <class TypeOfArray>
 class MovingAverage {
  private:
   size_t _array_size;
   size_t _current_index;
+  size_t _average_counter;
   TypeOfArray *_array;
   TypeOfArray _average_sum;
   TypeOfArray _initial_value;
@@ -26,17 +29,10 @@ class MovingAverage {
   MovingAverage(size_t size)
       : _array_size(size),
         _current_index(0),
+        _average_counter(0),
         _array((TypeOfArray *)calloc(size, sizeof(TypeOfArray))),
         _average_sum(0),
         _initial_value(0) {}
-  MovingAverage(size_t size, TypeOfArray initialize)
-      : _array_size(size),
-        _current_index(0),
-        _array((TypeOfArray *)calloc(size, sizeof(TypeOfArray))),
-        _average_sum(initialize * size),
-        _initial_value(initialize) {
-    for (size_t i = 0; i < size; i++) _array[i] = initialize;
-  }
 
   // Destructor
   ~MovingAverage() { free(_array); }
@@ -50,12 +46,18 @@ class MovingAverage {
 
     _average_sum += _array[_current_index];
 
+    if (_average_counter < _array_size) {
+      _average_counter++;
+    }
+
     _nextIndex();
 
     return *this;
   }
 
-  TypeOfArray get() { return (_average_sum / _array_size); }
+  TypeOfArray get() {
+    return (_average_sum / ((_average_counter == 0) ? 1 : _average_counter));
+  }
 
   TypeOfArray front() {
     int last_index = _current_index;
@@ -92,24 +94,21 @@ class MovingAverage {
   size_t size() { return _array_size; }
 
   MovingAverage<TypeOfArray> &resize(size_t new_size) {
-    _array_size = new_size;
-    _array = realloc(_array, new_size * sizeof(TypeOfArray));
+    _array = (TypeOfArray *)realloc(_array, new_size * sizeof(TypeOfArray));
 
-    return *this;
-  }
-  MovingAverage<TypeOfArray> &reset() {
-    for (size_t i = 0; i < _array_size; i++) {
-      _array[i] = _initial_value;
+    if (_current_index == 0) {
+      _current_index = _array_size;
     }
 
-    _average_sum = _initial_value * _array_size;
-
+    _array_size = new_size;
     return *this;
   }
   MovingAverage<TypeOfArray> &clear() {
-    _array[_current_index] = 0;
+    memset(_array, 0, sizeof(TypeOfArray) * _array_size);
 
     _average_sum = 0;
+
+    _average_counter = 0;
 
     return *this;
   }
@@ -118,10 +117,12 @@ class MovingAverage {
       _array[i] = fill_value;
     }
 
-    _average_sum = fill_value * _array_size;
+    _average_sum = fill_value * _average_counter;
 
     return *this;
   }
+
+  size_t d_counter() { return _average_counter; }
 };
 
 #endif
