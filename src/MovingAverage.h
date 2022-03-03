@@ -15,6 +15,7 @@ class MovingAverage {
   size_t _array_size;
   size_t _current_index;
   size_t _average_counter;
+  TypeOfArray *_custom_;
   TypeOfArray *_array;
   TypeOfArray _average_sum;
   TypeOfArray _initial_value;
@@ -58,6 +59,20 @@ class MovingAverage {
   TypeOfArray get() {
     return (_average_sum / ((_average_counter == 0) ? 1 : _average_counter));
   }
+  TypeOfArray get(size_t n_points){return get_partial(size_t n_points)}
+
+  TypeOfArray get_partial(size_t n_points) {
+    if (n_points > _average_counter) n_points = _average_counter;
+
+    int sum = 0;
+    for (size_t i = 0; i < n_points; i++) {
+      sum += (*this)[i];
+    }
+
+    return sum / _average_counter;
+  }
+
+  TypeOfArray get_custom() {}
 
   TypeOfArray front() {
     int last_index = _current_index;
@@ -74,7 +89,7 @@ class MovingAverage {
   TypeOfArray back() { return _array[_current_index]; }
 
   TypeOfArray operator[](size_t index) {
-    if (index > _array_size) return 0;
+    if (index > _array_size) return NULL;
 
     int final_index = (_current_index - 1) - index;
 
