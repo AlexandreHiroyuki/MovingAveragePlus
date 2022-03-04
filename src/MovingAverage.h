@@ -56,12 +56,12 @@ class MovingAverage {
     return *this;
   }
 
-  MovingAverage<TypeOfArray> &add_partial() { return *this; }
+  MovingAverage<TypeOfArray> &create_partial() { return *this; }
 
   TypeOfArray get() {
     return (_average_sum / ((_average_counter == 0) ? 1 : _average_counter));
   }
-  TypeOfArray get(size_t n_points){return get_by_brute(size_t n_points)}
+  TypeOfArray get(size_t n_points) { return get_by_brute(n_points); }
 
   TypeOfArray get_by_brute(size_t n_points) {
     if (n_points > _average_counter) n_points = _average_counter;
@@ -71,7 +71,7 @@ class MovingAverage {
       sum += (*this)[i];
     }
 
-    return sum / _average_counter;
+    return sum / n_points;
   }
 
   TypeOfArray get_partial() {}
