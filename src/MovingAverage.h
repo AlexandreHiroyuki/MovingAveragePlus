@@ -115,6 +115,12 @@ class MovingAverage {
 
     if (_current_index == 0) {
       _current_index = _array_size;
+    } else if (_current_index >= new_size) {
+      _current_index = new_size - 1;
+    }
+
+    if (_average_counter >= new_size) {
+      _average_counter = new_size - 1;
     }
 
     _array_size = new_size;
