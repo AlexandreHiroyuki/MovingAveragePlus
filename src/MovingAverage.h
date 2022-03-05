@@ -15,10 +15,11 @@ class MovingAverage {
   size_t _array_size;
   size_t _current_index;
   size_t _average_counter;
-  TypeOfArray *_custom_;
   TypeOfArray *_array;
   TypeOfArray _average_sum;
   TypeOfArray _initial_value;
+
+  TypeOfArray *_partial_counters;
 
   void _nextIndex() {
     _current_index++;
@@ -56,8 +57,6 @@ class MovingAverage {
     return *this;
   }
 
-  MovingAverage<TypeOfArray> &create_partial() { return *this; }
-
   TypeOfArray get() {
     return (_average_sum / ((_average_counter == 0) ? 1 : _average_counter));
   }
@@ -73,8 +72,6 @@ class MovingAverage {
 
     return sum / n_points;
   }
-
-  TypeOfArray get_partial() {}
 
   TypeOfArray front() {
     int last_index = _current_index;
@@ -148,7 +145,13 @@ class MovingAverage {
     return *this;
   }
 
-  size_t d_counter() { return _average_counter; }
+  // Partial Average methods
+
+  MovingAverage<TypeOfArray> &create_partial() { return *this; }
+
+  TypeOfArray get_partial() {}
+
+  size_t debug_counter() { return _average_counter; }
 };
 
 #endif
