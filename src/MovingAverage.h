@@ -104,7 +104,10 @@ class MovingAverage {
     return _array[final_index];
   }
 
-  TypeOfArray atIndex(size_t index) { return _array[index]; }
+  TypeOfArray atIndex(size_t index) {
+    if (index > _array_size) return NULL;
+    return _array[index];
+  }
 
   // Modify array
 
@@ -136,7 +139,7 @@ class MovingAverage {
     return *this;
   }
   MovingAverage<TypeOfArray> &fill(TypeOfArray fill_value) {
-    for (size_t i = 0; i < _array_size; i++) {
+    for (size_t i = 0; i < _average_counter; i++) {
       _array[i] = fill_value;
     }
 
