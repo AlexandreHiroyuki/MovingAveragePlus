@@ -158,6 +158,10 @@ class MovingAverage {
   // Partial Average methods
 
   size_t create_partial(size_t sum_size) {
+    if (sum_size > _array_size) {
+      sum_size = _array_size;
+    }
+
     size_t _counter_initial_size = 1;
     _partial_sums_counter++;
 
@@ -178,6 +182,8 @@ class MovingAverage {
   }
 
   TypeOfArray get_partial(size_t id) {
+    if (id > _partial_sums_counter) return NULL;
+
     if (_average_counter >= _partial_sum_sizes[id])
       return _partial_sums[id] / _partial_sum_sizes[id];
     else
