@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring Map For MovingAverage lib
+# Syntax Coloring Map For MovingAveragePlus library
 #######################################
 
 #######################################
@@ -25,5 +25,6 @@ size	KEYWORD2
 resize	KEYWORD2
 clear	KEYWORD2
 fill	KEYWORD2
+
 create_partial	KEYWORD2
 get_partial	KEYWORD2
