@@ -1,4 +1,4 @@
-# Moving Average Arduino Library
+# Moving Average+ Library for Arduino
 
 [![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/stargazers)

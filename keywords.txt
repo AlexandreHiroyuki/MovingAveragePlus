@@ -6,22 +6,24 @@
 # Class (KEYWORD1)
 #######################################
 
-MovingAverage	KEYWORD1
+MovingAveragePlus	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
 push	KEYWORD2
-get     KEYWORD2
+get	KEYWORD2
+get_by_brute	KEYWORD2
 
 front	KEYWORD2
-back    KEYWORD2
+back	KEYWORD2
 
-atIndex KEYWORD2
-size    KEYWORD2
+atIndex	KEYWORD2
+size	KEYWORD2
 
-resize  KEYWORD2
-reset   KEYWORD2
-clear   KEYWORD2
-fill    KEYWORD2
+resize	KEYWORD2
+clear	KEYWORD2
+fill	KEYWORD2
+create_partial	KEYWORD2
+get_partial	KEYWORD2

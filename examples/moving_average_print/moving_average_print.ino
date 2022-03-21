@@ -1,10 +1,9 @@
 // Include lib:
-#include <MovingAverage.h>
+#include <MovingAveragePlus.h>
 
 // Create an Arithmetic Moving Average object of unsigned int type,
 // 10 in size
-// and initialize it with value 2
-MovingAverage<unsigned> test(10);
+MovingAveragePlus<unsigned> test(10);
 
 // This variable just generates input for average test
 unsigned delta_x = 0;

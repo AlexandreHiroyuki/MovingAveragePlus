@@ -1,16 +1,15 @@
 /***************************************************************
-  MovingAverage.h - Moving average structure manager.
+  MovingAveragePlus.h - Moving average structure manager.
   Created by Alexandre Hiroyuki Yamauchi, September 2, 2019.
 ***************************************************************/
 #ifndef MOVING_AVERAGE_H
 #define MOVING_AVERAGE_H
 
 #include <Arduino.h>
-
-#include <cstring>
+#include <string.h>
 
 template <class TypeOfArray>
-class MovingAverage {
+class MovingAveragePlus {
  private:
   size_t _array_size;
   size_t _current_index;
@@ -30,7 +29,7 @@ class MovingAverage {
 
  public:
   // Constructor
-  MovingAverage(size_t size)
+  MovingAveragePlus(size_t size)
       : _array_size(size),
         _current_index(0),
         _average_counter(0),
@@ -41,11 +40,11 @@ class MovingAverage {
         _partial_sum_sizes((TypeOfArray *)calloc(1, sizeof(TypeOfArray))) {}
 
   // Destructor
-  ~MovingAverage() { free(_array); }
+  ~MovingAveragePlus() { free(_array); }
 
   // Get Result and Access elements
 
-  MovingAverage<TypeOfArray> &push(TypeOfArray input) {
+  MovingAveragePlus<TypeOfArray> &push(TypeOfArray input) {
     TypeOfArray last_value = _array[_current_index];
     _average_sum -= last_value;
     _average_sum += input;
@@ -98,7 +97,7 @@ class MovingAverage {
   TypeOfArray back() { return _array[_current_index]; }
 
   TypeOfArray operator[](size_t index) {
-    if (index > _array_size) return NULL;
+    if (index > _array_size) return 0;
 
     int final_index = (_current_index - 1) - index;
 
@@ -112,7 +111,7 @@ class MovingAverage {
   }
 
   TypeOfArray atIndex(size_t index) {
-    if (index > _array_size) return NULL;
+    if (index > _array_size) return 0;
     return _array[index];
   }
 
@@ -120,7 +119,7 @@ class MovingAverage {
 
   size_t size() { return _array_size; }
 
-  MovingAverage<TypeOfArray> &resize(size_t new_size) {
+  MovingAveragePlus<TypeOfArray> &resize(size_t new_size) {
     _array = (TypeOfArray *)realloc(_array, new_size * sizeof(TypeOfArray));
 
     if (_current_index == 0) {
@@ -136,7 +135,7 @@ class MovingAverage {
     _array_size = new_size;
     return *this;
   }
-  MovingAverage<TypeOfArray> &clear() {
+  MovingAveragePlus<TypeOfArray> &clear() {
     memset(_array, 0, sizeof(TypeOfArray) * _array_size);
 
     _average_sum = 0;
@@ -145,7 +144,7 @@ class MovingAverage {
 
     return *this;
   }
-  MovingAverage<TypeOfArray> &fill(TypeOfArray fill_value) {
+  MovingAveragePlus<TypeOfArray> &fill(TypeOfArray fill_value) {
     for (size_t i = 0; i < _average_counter; i++) {
       _array[i] = fill_value;
     }
@@ -182,7 +181,7 @@ class MovingAverage {
   }
 
   TypeOfArray get_partial(size_t id) {
-    if (id > _partial_sums_counter) return NULL;
+    if (id > _partial_sums_counter) return 0;
 
     if (_average_counter >= _partial_sum_sizes[id])
       return _partial_sums[id] / _partial_sum_sizes[id];
