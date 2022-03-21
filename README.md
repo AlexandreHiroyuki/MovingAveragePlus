@@ -8,7 +8,7 @@ A C++ library that implements a moving average on the Arduino platform. Performa
 
 This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-library/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-library)
 
-Check our hottest exclusive feature released, the Partials!
+Check our **hottest and exclusive** feature released, the Partials!
 
 > _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAverage_ArduinoLibrary/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_
 
