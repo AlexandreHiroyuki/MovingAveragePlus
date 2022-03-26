@@ -16,7 +16,7 @@ Check our **hottest and exclusive** feature released, the Partials!
 
 ## Documentation
 
-This library implements the moving average using a circular array.
+This library implements the moving average using a circular array to improve the performance.
 
 > _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAverage_ArduinoLibrary/)_
 
