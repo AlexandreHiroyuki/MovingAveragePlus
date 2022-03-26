@@ -120,7 +120,10 @@ class MovingAveragePlus {
   size_t size() { return _array_size; }
 
   MovingAveragePlus<TypeOfArray> &resize(size_t new_size) {
-    _array = (TypeOfArray *)realloc(_array, new_size * sizeof(TypeOfArray));
+    _array = static_cast<TypeOfArray *>(
+        realloc(_array, new_size * sizeof(TypeOfArray)));
+
+    for (size_t i = _array_size; i < new_size; i++) _array[i] = 0;
 
     if (_current_index == 0) {
       _current_index = _array_size;
@@ -165,11 +168,13 @@ class MovingAveragePlus {
     _partial_sums_counter++;
 
     if (_partial_sums_counter > _counter_initial_size) {
-      _partial_sums = (TypeOfArray *)realloc(
-          _partial_sums, _partial_sums_counter * sizeof(TypeOfArray));
-      _partial_sum_sizes = (TypeOfArray *)realloc(
-          _partial_sum_sizes, _partial_sums_counter * sizeof(TypeOfArray));
+      _partial_sums = static_cast<TypeOfArray *>(
+          realloc(_partial_sums, _partial_sums_counter * sizeof(TypeOfArray)));
+      _partial_sum_sizes = static_cast<TypeOfArray *>(realloc(
+          _partial_sum_sizes, _partial_sums_counter * sizeof(TypeOfArray)));
     }
+
+    _partial_sums[_partial_sums_counter - 1] = 0;
 
     for (size_t i = 0; i < sum_size; i++) {
       _partial_sums[_partial_sums_counter - 1] += (*this)[i];
