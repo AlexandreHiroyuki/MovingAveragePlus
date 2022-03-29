@@ -8,7 +8,7 @@
 
 A C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improving tip is welcome.
 
-This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-library/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-library)
+This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-plus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus)
 
 Check our **hottest and exclusive** feature released, the Partials!
 
