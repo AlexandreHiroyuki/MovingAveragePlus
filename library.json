@@ -1,0 +1,33 @@
+{
+    "name": "Moving Average Plus",
+    "version": "4.1.2",
+    "description": "Moving Average Plus implements a lightweight moving average structure on Arduino. Performance and usability are the two focuses I thought of when creating this library.",
+    "keywords": "sensors, input, processing, arduino, library, iot, filter, moving average",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary"
+    },
+    "authors": [
+        {
+            "name": "Alexandre Hiroyuki",
+            "email": "alex.hiroyuki@outlook.com",
+            "url": "https://github.com/AlexandreHiroyuki",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary",
+    "frameworks": "arduino",
+    "platforms": "*",
+    "headers": "MovingAveragePlus.h",
+    "examples": [
+        {
+            "name": "MovingAveragePlus",
+            "base": "examples/moving_average_print",
+            "files": [
+                "moving_average_print.ino"
+            ]
+        }
+    ],
+    "srcDir": "src"
+}
