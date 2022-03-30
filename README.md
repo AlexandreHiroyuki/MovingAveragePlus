@@ -22,7 +22,7 @@ This library implements the moving average using a circular array to improve the
 
 ## Contributing
 
-1. Fork it (<https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary>)
+1. Fork it (<https://github.com/AlexandreHiroyuki/MovingAveragePlus>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Added something'`)
 4. Push to the branch (`git push origin feature/fooBar`)
