@@ -10,7 +10,7 @@ A C++ library that implements a moving average on the Arduino platform. Performa
 
 This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-plus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
 
-_**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/Moving%20Average%20Plus)!
+_**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
 
 Check our **hottest and exclusive** feature released, the Partials!
 
