@@ -12,13 +12,13 @@ This library is listed in the official [Arduino Library Manager](https://www.ard
 
 Check our **hottest and exclusive** feature released, the Partials!
 
-> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAverage_ArduinoLibrary/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_
+> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlus/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_
 
 ## Documentation
 
 This library implements the moving average using a circular array to improve the performance.
 
-> _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAverage_ArduinoLibrary/)_
+> _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAveragePlus/)_
 
 ## Contributing
 
