@@ -1,10 +1,10 @@
 # Moving Average Plus - C++ Library for Arduino
 
-[![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/stargazers)
-[![Latest Release Date](https://img.shields.io/github/release-date/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/releases)
-[![Last Commit Date](https://img.shields.io/github/last-commit/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary/commits/master)
-[![Top Language](https://img.shields.io/github/languages/top/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)
+[![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAverage_ArduinoLibrary?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/stargazers)
+[![Latest Release Date](https://img.shields.io/github/release-date/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
+[![Last Commit Date](https://img.shields.io/github/last-commit/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/commits/master)
+[![Top Language](https://img.shields.io/github/languages/top/AlexandreHiroyuki/MovingAverage_ArduinoLibrary)](https://github.com/AlexandreHiroyuki/MovingAveragePlus)
 
 A C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improving tip is welcome.
 
