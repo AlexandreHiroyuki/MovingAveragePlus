@@ -5,7 +5,7 @@
     "keywords": "sensors, input, data, processing, arduino, library, iot, filter, moving average, smoothing, smooth, moving, average, plus",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary"
+        "url": "https://github.com/AlexandreHiroyuki/MovingAveragePlus"
     },
     "authors": [
         {
@@ -16,7 +16,7 @@
         }
     ],
     "license": "MIT",
-    "homepage": "https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary",
+    "homepage": "https://github.com/AlexandreHiroyuki/MovingAveragePlus",
     "frameworks": "arduino",
     "platforms": "*",
     "headers": "MovingAveragePlus.h",
