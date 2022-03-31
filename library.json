@@ -2,7 +2,7 @@
     "name": "MovingAveragePlus",
     "version": "4.1.2",
     "description": "Moving Average Plus implements a lightweight moving average structure on Arduino. Performance and usability are the two focuses I thought of when creating this library.",
-    "keywords": "sensors, input, processing, arduino, library, iot, filter, moving average",
+    "keywords": "sensors, input, data, processing, arduino, library, iot, filter, moving average, smoothing, smooth, moving, average, plus",
     "repository": {
         "type": "git",
         "url": "https://github.com/AlexandreHiroyuki/MovingAverage_ArduinoLibrary"
