@@ -1,6 +1,7 @@
 # Moving Average Plus - C++ Library for Arduino
 
 [![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/alexandrehiroyuki/library/MovingAveragePlus.svg)](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)
 [![Latest Release Date](https://img.shields.io/github/release-date/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
 [![Last Commit Date](https://img.shields.io/github/last-commit/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/commits/master)
 
