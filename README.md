@@ -1,12 +1,3 @@
-<style>
-   .hover-back-highlight{
-      transition: background-color 0.25s;
-   }
-   .hover-back-highlight:hover {
-      background-color: #44ff4424;
-   }
-</style>
-
 # Moving Average Plus - C++ Library for Arduino
 
 [![Latest Release](https://img.shields.io/github/v/release/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
@@ -20,21 +11,21 @@
 
 A C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improving tip is welcome.
 
-<span class="hover-back-highlight"> This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-plus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus). </span>
+This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/moving-average-plus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
 
-<span class="hover-back-highlight"> _**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)! </span>
+_**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
 
-<span class="hover-back-highlight"> Check our **hottest and exclusive** feature released, the Partials! </span>
+Check our **hottest and exclusive** feature released, the Partials!
 
-> <span class="hover-back-highlight"> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlus/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_ </span>
+> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlus/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_
 
 ## Documentation
 
 This library implements the moving average using a circular array to improve the performance.
 
-> <span class="hover-back-highlight"> _[Click here to see the full documentation ON-LINE](https://moving-average-plus.notion.site/Moving-Average-Lib-for-Arduino-Docs-321407678aab4ba99a03116af9bcf37b)_ </span>
+> _[Click here to see the full documentation ON-LINE](https://moving-average-plus.notion.site/Moving-Average-Lib-for-Arduino-Docs-321407678aab4ba99a03116af9bcf37b)_
 >
-> <span class="hover-back-highlight"> _BETTER than offline!_ </span>
+> _BETTER than offline!_
 
 > _[Documentation Exported/OFF-LINE](https://alexandrehiroyuki.github.io/MovingAveragePlus/)_
 >
@@ -51,4 +42,4 @@ This library implements the moving average using a circular array to improve the
 
 ## Developed by
 
-<span class="hover-back-highlight"> **Alexandre Hiroyuki** – [GitHub](https://github.com/AlexandreHiroyuki) – [LinkedIn](https://www.linkedin.com/in/alexandre-hiroyuki-yamauchi-7137241a6/)</span>
+**Alexandre Hiroyuki** – [GitHub](https://github.com/AlexandreHiroyuki) – [LinkedIn](https://www.linkedin.com/in/alexandre-hiroyuki-yamauchi-7137241a6/)
