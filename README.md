@@ -29,7 +29,7 @@ This library implements the moving average using a circular array to improve the
 
 > _[Documentation Exported/OFF-LINE](https://alexandrehiroyuki.github.io/MovingAveragePlus/)_
 >
-> _WARNING! — The exported documentation is less responsive!_
+> _WARNING! — The exported documentation is less responsive! You can also access the exported files on the `docs/` folder when you clone or dowload the repository._
 
 ## Contributing
 
