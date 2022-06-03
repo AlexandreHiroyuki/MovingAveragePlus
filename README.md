@@ -19,7 +19,7 @@ _**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this li
 
 Check our **hottest and exclusive** feature released, the Partials!
 
-> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlus/Moving%20Ave%20462e9/Moving%20Ave%20a3c6f/Partials%205372a.html)_
+> _[Click here to read more about the Partials Concept](https://moving-average-plus.notion.site/Partials-e500d332364948d98205c2ec68d31308)_
 
 ## Documentation
 
