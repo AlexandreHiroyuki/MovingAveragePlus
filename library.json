@@ -22,14 +22,14 @@
     "headers": "MovingAveragePlus.h",
     "examples": [
         {
-            "name": "MovingAveragePlus Basic Example",
+            "name": "Basic Print Example",
             "base": "examples/moving_average_print",
             "files": [
                 "moving_average_print.ino"
             ]
         },
         {
-            "name": "MovingAveragePlus Partials Concept Example",
+            "name": "Partials Concept Example",
             "base": "examples/partials_example",
             "files": [
                 "partials_example.ino"
