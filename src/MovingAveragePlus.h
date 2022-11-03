@@ -40,7 +40,11 @@ class MovingAveragePlus {
         _partial_sum_sizes((TypeOfArray *)calloc(1, sizeof(TypeOfArray))) {}
 
   // Destructor
-  ~MovingAveragePlus() { free(_array); }
+  ~MovingAveragePlus() {
+    free(_array);
+    free(_partial_sums);
+    free(_partial_sum_sizes);
+  }
 
   // Get Result and Access elements
 
