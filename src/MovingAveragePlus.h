@@ -114,7 +114,7 @@ class MovingAveragePlus {
     return _array[final_index];
   }
 
-  TypeOfArray atIndex(size_t index) {
+  TypeOfArray at_index(size_t index) {
     if (index > _array_size) return 0;
     return _array[index];
   }
