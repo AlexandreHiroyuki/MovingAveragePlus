@@ -22,7 +22,7 @@ class MovingAveragePlus {
   TypeOfArray *_partial_sums;
   TypeOfArray *_partial_sum_sizes;
 
-  void _nextIndex() {
+  void _next_index() {
     _current_index++;
     if (_current_index >= _array_size) _current_index = 0;
   }
@@ -65,7 +65,7 @@ class MovingAveragePlus {
       _average_counter++;
     }
 
-    _nextIndex();
+    _next_index();
 
     return *this;
   }
