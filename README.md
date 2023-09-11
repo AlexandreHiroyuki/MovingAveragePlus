@@ -15,23 +15,19 @@ A C++ library that implements a moving average on the Arduino platform. Performa
 
 This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/movingaverageplus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
 
-_**—NEW DOWNLOAD PLATFORM AVAILABLE—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
+_**—Recommended Platform—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
 
-Check our **hottest and exclusive** feature released, the Partials!
+Check our **exclusive** feature, the Partials!
 
-> _[Click here to read more about the Partials Concept](https://moving-average-plus.notion.site/Partials-e500d332364948d98205c2ec68d31308)_
+> _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlusDocs/docs/category/partials)_
 
 ## Documentation
 
 This library implements the moving average using a circular array to improve the performance.
 
-> _[Click here to see the full documentation ON-LINE](https://moving-average-plus.notion.site/Moving-Average-Lib-for-Arduino-Docs-321407678aab4ba99a03116af9bcf37b)_
+> _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAveragePlusDocs/)_
 >
-> _BETTER than offline!_
-
-> _[Documentation Exported/OFF-LINE](https://alexandrehiroyuki.github.io/MovingAveragePlus/)_
->
-> _WARNING! — The exported documentation is less responsive! You can also access the exported files on the `docs/` folder when you clone or dowload the repository._
+> _[The documentation is coded with docusaurus, and you can visit the repository](https://github.com/AlexandreHiroyuki/MovingAveragePlusDocs)_
 
 ## Contributing
 
