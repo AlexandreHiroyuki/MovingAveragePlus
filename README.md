@@ -9,9 +9,11 @@
 [![Contributors](https://img.shields.io/github/contributors-anon/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/graphs/contributors)
 [![Top Language](https://img.shields.io/github/languages/top/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus)
 
+## Description
+
 > _Old name: MovingAverage_ArduinoLibrary_
 
-A C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improving tip is welcome.
+Moving Average Plus is a C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improvement tip is welcome. It is useful for filtering noisy data from sensors, for example.
 
 This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/movingaverageplus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
 
