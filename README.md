@@ -25,9 +25,9 @@ Check our **exclusive** feature, the Partials!
 
 This library implements the moving average using a circular array to improve the performance.
 
-> _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAveragePlusDocs/)_
+> Online Docs: _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/MovingAveragePlusDocs/)_
 >
-> _[The documentation is coded with docusaurus, and you can visit the repository](https://github.com/AlexandreHiroyuki/MovingAveragePlusDocs)_
+> GitHub Repository: _[The documentation is coded with docusaurus, and you can visit the repository](https://github.com/AlexandreHiroyuki/MovingAveragePlusDocs)_
 
 ## Contributing
 
