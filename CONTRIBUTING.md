@@ -31,3 +31,9 @@ If you wish to test the library on a specific board, configure the environment i
 ```bash
 $ pio test -e <environment>
 ```
+
+## Publish Package on PlatformIO Registry
+
+```bash
+pio pkg publish .
+```
