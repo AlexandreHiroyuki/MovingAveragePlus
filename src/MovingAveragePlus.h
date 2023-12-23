@@ -5,8 +5,8 @@
 #ifndef MOVING_AVERAGE_H
 #define MOVING_AVERAGE_H
 
-#include <Arduino.h>
-#include <string.h>
+#include <cstdlib>
+#include <cstring>  // memset
 
 template <class TypeOfArray>
 class MovingAveragePlus {
@@ -98,7 +98,12 @@ class MovingAveragePlus {
     return _array[last_index];
   }
 
-  TypeOfArray back() { return _array[_current_index]; }
+  TypeOfArray back() {
+    if (_average_counter < _array_size) {
+      return _array[0];
+    }
+    return _array[_current_index];
+  }
 
   TypeOfArray operator[](size_t index) {
     if (index > _array_size) return 0;
@@ -124,19 +129,17 @@ class MovingAveragePlus {
   size_t size() { return _array_size; }
 
   MovingAveragePlus<TypeOfArray> &resize(size_t new_size) {
+    if (new_size == _array_size) return *this;
+
     _array = static_cast<TypeOfArray *>(
         realloc(_array, new_size * sizeof(TypeOfArray)));
 
     for (size_t i = _array_size; i < new_size; i++) _array[i] = 0;
 
-    if (_current_index == 0) {
-      _current_index = _array_size;
-    } else if (_current_index >= new_size) {
+    if (_array_size < new_size) {
       _current_index = new_size - 1;
-    }
-
-    if (_average_counter >= new_size) {
-      _average_counter = new_size - 1;
+    } else {
+      if (_current_index >= new_size) _current_index = new_size - 1;
     }
 
     _array_size = new_size;
@@ -144,6 +147,8 @@ class MovingAveragePlus {
   }
   MovingAveragePlus<TypeOfArray> &clear() {
     memset(_array, 0, sizeof(TypeOfArray) * _array_size);
+
+    _current_index = 0;
 
     _average_sum = 0;
 
