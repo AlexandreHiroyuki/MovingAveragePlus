@@ -13,14 +13,18 @@
 
 > _Old name: MovingAverage_ArduinoLibrary_
 
-Moving Average Plus is a C++ library that implements a moving average on the Arduino platform. Performance and usability are the two focuses I thought of when creating this library, so every improvement tip is welcome. It is useful for filtering noisy data from sensors, for example.
+**This library is deprecated. All support is now dedicated to [Data Tome](https://github.com/AlexandreHiroyuki/DataTome)!**
 
-This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/movingaverageplus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
+**[Data Tome](https://github.com/AlexandreHiroyuki/DataTome) includes all the features of Moving Average Plus, in addition to many other features, such as better type control, more statistics, and better test coverage.**
 
-_**—Recommended Platform—**_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
+**Start coding with [Data Tome](https://github.com/AlexandreHiroyuki/DataTome)!**
 
-Check our **exclusive** feature, the Partials!
-
+> This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/movingaverageplus/), and you can also find it at [Arduino Library List](https://www.arduinolibraries.info/libraries/moving-average-plus).
+>
+> _—Recommended Platform—_ Now it's possible to install this library on the [PlatformIO Registry](https://registry.platformio.org/libraries/alexandrehiroyuki/MovingAveragePlus)!
+>
+> Check our **exclusive** feature, the Partials!
+>
 > _[Click here to read more about the Partials Concept](https://alexandrehiroyuki.github.io/MovingAveragePlusDocs/docs/category/partials)_
 
 ## Documentation
