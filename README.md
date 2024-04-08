@@ -5,7 +5,7 @@
 [![Latest Release Date](https://img.shields.io/github/release-date/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/releases)
 [![Last Commit Date](https://img.shields.io/github/last-commit/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/commits/master)
 
-[![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAveragePlus?color=yellow)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/AlexandreHiroyuki/MovingAveragePlus?style=flat&color=yellow)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/stargazers)
 [![Contributors](https://img.shields.io/github/contributors-anon/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus/graphs/contributors)
 [![Top Language](https://img.shields.io/github/languages/top/AlexandreHiroyuki/MovingAveragePlus)](https://github.com/AlexandreHiroyuki/MovingAveragePlus)
 
